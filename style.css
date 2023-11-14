@@ -162,7 +162,7 @@ html {
         background-clip: padding-box;
         overflow: hidden;
         z-index: 0;
-        }
+       }
         header img:first-child {
             position: absolute;
             width: 100%;
@@ -171,17 +171,16 @@ html {
             .header_background {
                 display: flex;
                 position: absolute;
-                height: 100%;
+                height: 105%;
+                width: 105%;
                 overflow: hidden;
                 z-index: -1;
                 align-items: start;
+                background-image: url("./assets/img/background.gif");
+                background-size: cover;
+                filter: blur(6px);
                 }
-                .header_background video {
-                    display: flex;
-                    height: 100%;
-                    width: auto;
-                    margin-top: 0;
-                    }
+
     .blinks {
         position: absolute;
         animation-name: blink;
@@ -230,6 +229,7 @@ html {
         height: 100vh; /* Fallback for browsers that do not support Custom Properties */
         height: calc(var(--vh, 1vh) * 100);
         z-index: 1;
+        background-size: cover;
         }
     main section {
         display: flex;
@@ -241,7 +241,7 @@ html {
         justify-content: center;
         color: aliceblue;
         -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         background-color:var(--blue-light);
         }
         main .impar {
@@ -484,16 +484,13 @@ html {
                 display: flex;
                 position: absolute;
                 height: 100%;
+                width: 100%;
                 overflow: hidden;
                 z-index: -1;
-                align-items: start;
+                background-image: url("./assets/img/bluesparkle.gif");
+                background-size: cover;
                 }
-                .dresscode_background video {
-                    display: flex;
-                    height: 100%;
-                    width: auto;
-                    margin-top: 0;
-                    }
+
 
     main .menu img:nth-child(3) {
             width: 50px;

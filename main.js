@@ -4,16 +4,16 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 var fechaEvento = "12/15/23"; // Por ejemplo, 31 de octubre de 2023
 const userPosition = document.getElementById('userPosition');
 
-const audioPlay = document.getElementById("play_mute")
-audioPlay.addEventListener('click', play_mute)
+// const audioPlay = document.getElementById("audio_icon")
+// audioPlay.addEventListener("click", play_mute)
 
-console.log(audioPlay.src)
+// console.log(audioPlay.src)
 
-function play_mute() {
-  if (audioPlay.src == './assets/icons/soundON.png') {
-    audioPlay.src = './assets/icons/soundOFF.png'
-  }
-}
+// function play_mute() {
+//   if (audioPlay.src == './assets/icons/soundON.png') {
+//     audioPlay.src = './assets/icons/soundOFF.png'
+//   }
+// }
 
 
 function mostrarDiferenciaTiempo() {

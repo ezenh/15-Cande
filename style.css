@@ -165,7 +165,7 @@ html {
         box-shadow: 0px 5px 10px 0px var(--blue-dark);
         }
     
-    #play_mute {
+    #audio_icon {
         display: flex;
         position: absolute;
         width: 50px;

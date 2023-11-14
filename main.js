@@ -1,12 +1,6 @@
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-// window.addEventListener('resize', () => {
-//   // We execute the same script as before
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty('--vh', `${vh}px`);
-// });
-
 //DETECCION DE POSICION DE SECTIONS PARA ANIMACIONES
 const main = document.getElementById("rest")
 
@@ -15,24 +9,7 @@ arrow.style.rotate = '180deg'
 const countdown = document.getElementById("countdown")
 const menu = document.getElementById("menu")
 
-const countdownH2 = document.getElementById("countdownH2")
-const eventH2 = document.getElementById("eventH2")
-const giftH2 = document.getElementById("giftH2")
-const dresscodeH2 = document.getElementById("dresscodeH2")
-const menuH2 = document.getElementById("menuH2")
-
-// const mileflotante = document.getElementById("mileflotante")
-// mileflotante.style.opacity = "0"
-
-// function ajustarAlturaDeElementos() {
-//   var alturaDelViewport = window.innerHeight;
-//   main.style.height = alturaDelViewport;
-//   console.log(alturaDelViewport)
-
-//   // Ajusta tus elementos con respecto a la altura del viewport aquí
-// }
-// window.addEventListener('load', ajustarAlturaDeElementos);
-// window.addEventListener('resize', ajustarAlturaDeElementos);
+const halo = document.getElementById("mainLogoHalo")
 
 var scrollItems = document.querySelectorAll('.section');
 

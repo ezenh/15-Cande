@@ -35,6 +35,23 @@ html {
         opacity: 0;
     }
 }
+@keyframes halo {
+    0% { 
+        opacity: 0;
+        }
+    10% {
+        opacity: 100%;
+        }
+    15% {
+        opacity: 0;
+        }
+    20% {
+        opacity: 100%;
+        }
+    100% {
+        opacity: 100%;
+        }
+}
 @keyframes tracking-in-expand {
     0% {
       letter-spacing: 0.5em;
@@ -163,11 +180,23 @@ html {
         overflow: hidden;
         z-index: 0;
        }
-        header img:first-child {
+        header #mainLogo, #mainLogoHalo {
             position: absolute;
             width: 100%;
             aspect-ratio: 1 / 1;
             }
+            #mainLogo {
+                z-index: 1;
+                }
+            #mainLogoHalo {
+                z-index: 0;
+                opacity: 0;
+                animation-name: halo;
+                animation-duration: 3s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+
+                }
             .header_background {
                 display: flex;
                 position: absolute;

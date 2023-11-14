@@ -12,7 +12,7 @@ const main = document.getElementById("rest")
 
 const arrow = document.getElementById("arrow")
 arrow.style.rotate = '180deg'
-const phrase = document.getElementById("phrase")
+const countdown = document.getElementById("countdown")
 const menu = document.getElementById("menu")
 
 const countdownH2 = document.getElementById("countdownH2")
@@ -39,14 +39,14 @@ var scrollItems = document.querySelectorAll('.section');
 main.addEventListener('scroll', verificarElementosEnViewport);
 
 function verificarElementosEnViewport() {
-  var limiteSuperior = phrase.getBoundingClientRect().top;
+  var limiteSuperior = countdown.getBoundingClientRect().top;
   var limiteInferior = menu.getBoundingClientRect().bottom;
 
   if (limiteSuperior > 0) {
     // console.log(limiteSuperior)
-    phrase.style.animationName = 'probando'
-    phrase.style.animationDuration = '.6s'
-    phrase.style.opacity = '1'
+    countdown.style.animationName = 'probando'
+    countdown.style.animationDuration = '.6s'
+    countdown.style.opacity = '1'
     // arrow.style.rotate = '180deg'
     // arrow.style.animationName = 'reverse-rotate'
 
@@ -65,39 +65,11 @@ function verificarElementosEnViewport() {
       var rect = item.getBoundingClientRect();
 
       if (rect.top >= 0 && rect.bottom <= main.clientHeight) {
-        // El elemento está dentro del viewport del contenedor
-        // console.log('Elemento dentro del viewport:', item.id);
+
       }
     });
   }
-// console.log(window.screen.height)
 
-// //CAMBIO DE POSICION Y TAMAÑO DEL HEADER
-// function verificarScroll() {
-//   var limiteSuperior = main.getBoundingClientRect().top;
-//   console.log(limiteSuperior);
-//   if (limiteSuperior == 0) {
-
-//     console.log('Llego al borde')
-//     countdownH2.style.animationName = 'tracking-in-expand'
-//     countdownH2.style.animationDuration = '1s'
-//     countdownH2.style.animationDelay = '1s'
-
-
-//   } else {
-
-//     console.log('no esta todavia')
-//   }
-// }
-
-// // Agrega un evento de desplazamiento para verificar continuamente
-// window.addEventListener('scroll', verificarScroll);
-
-// // Verifica el estado inicial
-// verificarScroll();
-
-//COUNTDOWN DEL EVENTO
-// Fecha del evento en formato mm/dd/yy
 var fechaEvento = "12/15/23"; // Por ejemplo, 31 de octubre de 2023
 
 function mostrarDiferenciaTiempo() {

@@ -531,12 +531,12 @@ html {
             z-index: 2;
 
             }
-        .dresscode .text p:nth-child(5) {
+        .dresscode .text p:nth-child(4) {
             width: 100%;
             text-align: center;
             font-size: 1.3rem;
             font-weight: 600;
-            margin-top: -50px;
+            margin-top: -70px;
             padding-left: 100px;
             z-index: 2;
         }
